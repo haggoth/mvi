@@ -8,12 +8,8 @@
 bin/
 tmp/
 Temp/
-<<<<<<< HEAD
 Library/*
 Library/
-=======
-Test2d/Library/
->>>>>>> 2aa381d69ba27e4daf8979c7325e43820e356568
 *.tmp
 *.bak
 *.swp
