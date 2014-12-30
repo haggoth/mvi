@@ -5,6 +5,6 @@ public class UIManagerScript : MonoBehaviour {
 
 	public void StartStage1()
 	{
-		Application.LoadLevel("Stage1");
+		Application.LoadLevel("Scene1");
 	}
 }
