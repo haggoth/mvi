@@ -42,8 +42,11 @@ public class UnitScript : MonoBehaviour {
 		rigidbody2D.position = new Vector2(rigidbody2D.position.x - direction.x * 2,
 		                                   rigidbody2D.position.y - direction.y * 2);
 		//direction = new Vector2(direction.x * -1, direction.y * -1);
-		if(hp-- <= 0){
+		if(--hp <= 1){
 			(renderer as SpriteRenderer).color = Color.red;
+		}
+		if(hp <= 0){
+			(renderer as SpriteRenderer).sprite = null;
 			Destroy(this);
 			BoxCollider2D.Destroy(collider2D);
 		}
