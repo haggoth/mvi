@@ -8,6 +8,7 @@ public class PlayerScript : MonoBehaviour {
 	/// </summary>
 	public Vector2 speed = new Vector2(50, 50);
 	public Vector2 accel = new Vector2(0.5f,0.25f);
+	public Vector2 decel = new Vector2(0.75f, 0.75f);
 	
 	// 2 - Store the movement
 	private Vector2 movement;
@@ -22,7 +23,7 @@ public class PlayerScript : MonoBehaviour {
 		movement += new Vector2(
 			accel.x * inputX,
 			accel.y * inputY);
-		movement = new Vector2(movement.x * 0.75f, movement.y * 0.75f);
+		movement = new Vector2(movement.x * decel.x, movement.y * decel.y);
 		
 	}
 	
