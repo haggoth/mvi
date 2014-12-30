@@ -9,6 +9,7 @@ bin/
 tmp/
 Temp/
 Library/*
+Library/
 *.tmp
 *.bak
 *.swp
