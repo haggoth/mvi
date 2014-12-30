@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour {
 	/// 1 - The speed of the ship
 	/// </summary>
 	public Vector2 speed = new Vector2(50, 50);
+	public Vector2 accel = new Vector2(0.5f,0.25f);
 	
 	// 2 - Store the movement
 	private Vector2 movement;
@@ -18,9 +19,10 @@ public class PlayerScript : MonoBehaviour {
 		float inputY = Input.GetAxis("Vertical");
 		
 		// 4 - Movement per direction
-		movement = new Vector2(
-			speed.x * inputX,
-			speed.y * inputY);
+		movement += new Vector2(
+			accel.x * inputX,
+			accel.y * inputY);
+		movement = new Vector2(movement.x * 0.75f, movement.y * 0.75f);
 		
 	}
 	
