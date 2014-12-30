@@ -14,6 +14,9 @@ public class MoveScript : MonoBehaviour {
 	/// Moving direction
 	/// </summary>
 	public Vector2 direction = new Vector2(-1, 0);
+
+	public Collider hit = null;
+	public GameObject objecthit = null;
 	
 	private Vector2 movement;
 	
@@ -29,5 +32,11 @@ public class MoveScript : MonoBehaviour {
 	{
 		// Apply movement to the rigidbody
 		rigidbody2D.velocity = movement;
+	}
+
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		// Bounce in the opposite direction when colliding
+		direction = new Vector2(direction.x * -1, direction.y * -1);
 	}
 }

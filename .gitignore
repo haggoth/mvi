@@ -219,3 +219,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 *.userprefs
+Test2d/Test2d.userprefs
+*.userprefs
