@@ -7,4 +7,17 @@ public class UIManagerScript : MonoBehaviour {
 	{
 		Application.LoadLevel("Scene1");
 	}
+	public void StartStage2Debug()
+	{
+		Application.LoadLevel("Stage1");
+	}
+
+	public void ExitGame()
+	{
+		Application.Quit();
+	}
+	public void StartMainMenu()
+	{
+		Application.LoadLevel("MainMenu");
+	}
 }
