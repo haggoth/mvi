@@ -220,3 +220,11 @@ pip-log.txt
 *.userprefs
 Test2d/Test2d.userprefs
 *.userprefs
+*.csproj
+*.csproj
+Test2d/Assembly-CSharp-vs.csproj
+Test2d/Assembly-CSharp.csproj
+Test2d/Test2d-csharp.sln
+*.sln
+Test2d/Test2d.sln
+*.userprefs
